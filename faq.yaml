@@ -1,0 +1,378 @@
+title: Spend Glance Help & FAQ
+
+public:
+  beforeYouBegin:
+    title: Before You Begin
+    faqs: 
+          - id: what-is-spend-glance
+            question: What is Spend Glance?
+            answer: |
+              Spend Glance is a personal finance application that automatically extracts
+              transactions from your bank statements and helps you understand your
+              spending through dashboards, trends and categorization.
+
+          - id: bank-account-connection
+            question: Does Spend Glance connect directly to my bank account?
+            answer: |
+              No.
+              Spend Glance does not use Open Banking or internet banking credentials.
+              You remain in control by uploading your own bank statements whenever you choose.
+
+          - id: data-storage
+            question: Is my financial data stored on your servers?
+            answer: |
+              No.
+              Each user stores their financial data in their own Turso database.
+              The application only accesses your database to process your requests.
+
+          - id: why-turso
+            question: Why do I need a Turso database?
+            answer: |
+              Every user gets an independent database.
+              This provides:
+
+              - Better privacy
+              - Complete data isolation
+              - Easier backups
+              - No shared customer database
+
+          - id: is-turso-free
+            question: Is Turso free?
+            answer: |
+              Yes.
+              The free Turso plan is sufficient for most personal finance usage.
+              If Turso changes its pricing in the future, you can continue using your existing database or upgrade according to their plans.
+
+          - id: technical-knowledge
+            question: Do I need any technical knowledge?
+            answer: |
+              Very little.
+              The onboarding wizard guides you through creating a free Turso database and connecting it to Spend Glance.
+
+  account:
+    title: Account & Login
+    faqs: 
+        - id: google-sign-in
+          question: Why do I need Google Sign-In?
+          answer: |
+            Google Sign-In provides secure authentication without requiring another password.
+            Spend Glance never sees your Google password.
+
+        - id: login-provider
+          question: Can I use another login provider?
+          answer: |
+            Currently only Google Sign-In is supported.
+
+        - id: account-information
+          question: What information is stored about my account?
+          answer: |
+            Only basic profile information:
+
+            - Name
+            - Email address
+            - Google ID
+            - Profile picture (if available)
+            - Your Turso database connection details
+
+        - id: change-google-account
+          question: Can I change my Google account later?
+          answer: |
+            Not currently.
+            Future versions may support migrating to another Google account.
+
+  onboarding:
+    title: Onboarding
+    faqs: 
+          - id: onboarding-process
+            question: What happens during onboarding?
+            answer: |
+              The onboarding wizard helps you:
+
+              1. Verify your Google account.
+              2. Create a Turso database.
+              3. Generate an authentication token.
+              4. Connect your database.
+              5. Create your workspace.
+
+          - id: database-connection-failed
+            question: What if my database connection fails?
+            answer: |
+              Check:
+
+              - Database URL
+              - Authentication token
+              - Internet connection
+
+              You can retry without starting onboarding again.
+
+          - id: repeat-onboarding
+            question: Can I repeat onboarding?
+            answer: |
+              Yes.
+              You can reconnect your workspace if needed.
+
+users:
+  uploading:
+    title: Uploading Statements
+    faqs: 
+          - id: supported-file-formats
+            question: Which file formats are supported?
+            answer: |
+              Currently:
+              - PDF statements
+
+              Future versions may support:
+              - CSV
+              - Excel
+              - Additional formats
+
+          - id: scanned-statements
+            question: Can I upload scanned statements?
+            answer: |
+              Yes.
+              Spend Glance automatically switches to OCR when required.
+
+          - id: text-based-pdf
+            question: What happens if my PDF already contains text?
+            answer: |
+              The application uses text extraction first because it is faster and usually more accurate.
+              OCR is only used when necessary.
+
+          - id: pdf-rejected
+            question: Why was my PDF rejected?
+            answer: |
+              Possible reasons include:
+
+              - Not a PDF
+              - Corrupted file
+              - Duplicate upload
+              - Unsupported statement format
+
+          - id: duplicate-upload
+            question: Can I upload the same statement twice?
+            answer: |
+              No.
+              Duplicate statements are detected using a file hash.
+
+          - id: bulk-upload
+            question: Can I upload multiple statements together?
+            answer: |
+              Yes.
+              Bulk PDF import allows multiple statements to be processed in one operation.
+
+  transactions:
+    title: Transactions
+    faqs: 
+          - id: transaction-sources
+            question: Where do transactions come from?
+            answer: |
+              Transactions are extracted from:
+
+              - PDF statements
+              - OCR
+              - Voice input
+
+          - id: edit-transaction
+            question: Can I edit a transaction?
+            answer: |
+              Editing support will be added in a future release.
+
+          - id: missing-transaction
+            question: Why is a transaction missing?
+            answer: |
+              Possible reasons:
+
+              - The statement format is unsupported.
+              - OCR could not recognize the text.
+              - The transaction could not be parsed.
+
+          - id: merchant-name
+            question: Why is the merchant name different from my statement?
+            answer: |
+              Spend Glance cleans merchant names by removing reference numbers and payment prefixes to improve categorization.
+
+  categories:
+    title: Categories
+    faqs: 
+          - id: category-assignment
+            question: How are categories assigned?
+            answer: |
+              Spend Glance first attempts to match the transaction against your category keywords.
+              If no keyword matches, the transaction is currently assigned to **Other**. Future versions will introduce machine learning to improve categorization.
+
+          - id: edit-category
+            question: Can I edit a category?
+            answer: |
+              Yes.
+              You can rename existing categories at any time.
+              Changes are immediately reflected throughout your workspace.
+
+          - id: create-category
+            question: Can I create my own categories?
+            answer: |
+              Yes.
+              You can create new parent categories as well as child categories to organize your transactions however you prefer.
+
+          - id: delete-category
+            question: Can I delete a category?
+            answer: |
+              Yes.
+              Categories that are no longer needed can be deleted.
+              Be careful when deleting categories that are already assigned to transactions, as those transactions may need to be recategorized.
+
+          - id: child-category
+            question: What is a child category?
+            answer: |
+              Child categories let you organize spending under broader categories.
+              For example:
+
+              - Food
+                - Groceries
+                - Restaurants
+                - Coffee
+
+              This allows both high-level and detailed spending analysis.
+
+          - id: factory-reset-categories
+            question: What is Factory Reset Categories?
+            answer: |
+              Factory Reset restores the default category structure and keyword mappings that ship with Spend Glance.
+              Use this if you want to discard your custom changes and return to the original category setup.
+
+          - id: categorized-as-other
+            question: Why was something categorized as "Other"?
+            answer: |
+              The application could not find a matching keyword for the transaction.
+              You can improve future categorization by adding keywords to an existing category or creating a more appropriate category.
+
+  dashboard:
+    title: Dashboard
+    faqs: 
+          - id: total-spend
+            question: What does Total Spend mean?
+            answer: |
+              The sum of all debit transactions currently stored.
+
+          - id: monthly-spend
+            question: What is Monthly Spend?
+            answer: |
+              Your debit transactions for the current calendar month.
+
+          - id: category-concentration
+            question: What is Category Concentration?
+            answer: |
+              It shows how much of your spending is concentrated in your largest spending categories.
+
+          - id: spending-trends
+            question: What are Spending Trends?
+            answer: |
+              Monthly spending history over time.
+
+          - id: merchant-trend
+            question: What is Merchant Trend?
+            answer: |
+              Monthly spending grouped by merchant.
+
+  voice:
+    title: Voice Transactions
+    faqs: 
+          - id: voice-recording
+            question: Can I record expenses by speaking?
+            answer: |
+              Yes.
+              Upload a voice recording describing the expense.
+              Example:
+              > "I spent 350 rupees at Starbucks."
+
+          - id: supported-languages
+            question: Which languages are supported?
+            answer: |
+              Current support depends on the underlying speech recognition model.
+              English works best.
+
+          - id: voice-not-understood
+            question: Why wasn't my voice recording understood?
+            answer: |
+              Possible reasons:
+
+              - Poor audio quality
+              - Background noise
+              - Unclear speech
+              - Unsupported language
+
+  privacy:
+    title: Privacy & Security
+    faqs: 
+          - id: data-ownership
+            question: Who owns my financial data?
+            answer: |
+              You do.
+              Your data remains inside your own database.
+
+          - id: developer-access
+            question: Can the developer see my transactions?
+            answer: |
+              No.
+              The application accesses your database only while processing your requests.
+
+          - id: google-password
+            question: Is my Google password stored?
+            answer: |
+              No.
+              Google authentication is handled by Google.
+
+          - id: shared-database
+            question: Is my database shared with other users?
+            answer: |
+              No.
+              Every user has a completely separate database.
+
+  troubleshooting:
+    title: Troubleshooting
+    faqs: 
+          - id: empty-dashboard
+            question: Why is my dashboard empty?
+            answer: |
+              Make sure:
+
+              - Statements were uploaded successfully.
+              - Transactions were extracted.
+              - You are connected to the correct database.
+
+          - id: upload-failed
+            question: Why did my upload fail?
+            answer: |
+              Check:
+
+              - The file is a PDF.
+              - The file is not corrupted.
+              - Your internet connection.
+
+          - id: ocr-no-transactions
+            question: OCR found no transactions. What should I do?
+            answer: |
+              Some scanned statements require better scan quality.
+              Try a higher-resolution PDF if one is available.
+
+          - id: incorrect-categories
+            question: Why do my categories look incorrect?
+            answer: |
+              The categorization engine is continuously improving.
+              Future releases will support corrections and learning from user feedback.
+
+  futureFeatures:
+    title: Future Features
+    faqs: 
+          - id: planned-features
+            question: What features are planned for future releases?
+            answer: |
+              Planned improvements include:
+
+              - Transaction editing
+              - Machine learning categorization
+              - CSV import
+              - Excel import
+              - Budget tracking
+              - Recurring expense detection
+              - Better analytics
+              - Export options
