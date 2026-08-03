@@ -1,0 +1,7 @@
+{
+  "name": "spend-glance-faq",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Single source of truth for Spend Glance FAQ content (faq.yaml)",
+  "files": ["faq.yaml"]
+}
