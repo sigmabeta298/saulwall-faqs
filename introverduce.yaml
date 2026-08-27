@@ -417,7 +417,7 @@ audiences:
             If the publication is PIN protected, the recipient will also need the
             required PIN.
 
-        - id:-data-not-syncing
+        - id: data-not-syncing
           question: Why isn't my data synchronising?
           answer: |
             Check:
