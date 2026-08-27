@@ -1,0 +1,451 @@
+title: IntroVerDuce Help & FAQ
+
+audiences:
+  public:
+    beforeYouBegin:
+      title: Before You Begin
+      faqs:
+        - id: what-is-introverduce
+          question: What is IntroVerDuce?
+          answer: |
+            IntroVerDuce is a digital introduction tool that lets you create structured
+            introductions for different contexts, roles and interests.
+
+            Instead of having a single profile, you can create multiple personas and
+            decide exactly what each introduction contains.
+
+        - id: who-is-introverduce-for
+          question: Who is IntroVerDuce for?
+          answer: |
+            IntroVerDuce is for anyone who wants more control over how they introduce
+            themselves.
+
+            You can use different personas for different roles, professional contexts,
+            interests or situations.
+
+        - id: do-i-need-an-account
+          question: Do I need an IntroVerDuce account?
+          answer: |
+            An account is required to use your personal IntroVerDuce workspace and
+            manage your personas.
+
+            People receiving a published introduction do not need an IntroVerDuce
+            account.
+
+        - id: do-recipients-need-the-app
+          question: Does someone need the IntroVerDuce app to view my introduction?
+          answer: |
+            No.
+
+            A published introduction can be opened directly in a web browser.
+            The recipient does not need an IntroVerDuce account or the app installed.
+
+        - id: is-introverduce-free
+          question: Is IntroVerDuce free?
+          answer: |
+            IntroVerDuce offers a free version, with additional features available
+            depending on the plan you choose.
+
+    personas:
+      title: Personas
+      faqs:
+        - id: what-is-a-persona
+          question: What is a persona?
+          answer: |
+            A persona is a specific version of your introduction designed for a
+            particular context, role or interest.
+
+            For example, you could have separate personas for your professional
+            identity, a creative interest or a particular role.
+
+        - id: how-many-personas
+          question: Can I create multiple personas?
+          answer: |
+            Yes.
+
+            You can create personas for different contexts and decide what information
+            belongs in each one.
+
+        - id: are-personas-independent
+          question: Are my personas separate from each other?
+          answer: |
+            Yes.
+
+            Each persona can have its own name, description and sections, while your
+            core profile information is maintained separately.
+
+        - id: can-i-change-a-persona
+          question: Can I change a persona after creating it?
+          answer: |
+            Yes.
+
+            You can edit your persona and change its sections and content whenever
+            you need to.
+
+    sharing:
+      title: Sharing
+      faqs:
+        - id: how-does-sharing-work
+          question: How does sharing work?
+          answer: |
+            You can publish a specific persona as a public snapshot and share the
+            resulting link with someone else.
+
+            You can also generate a QR code that takes the recipient directly to your
+            presentation.
+
+        - id: can-i-share-only-one-persona
+          question: Can I share only one persona?
+          answer: |
+            Yes.
+
+            Publishing is done for a specific persona. Your other personas and private
+            profile information remain separate from what you choose to publish.
+
+        - id: can-i-unpublish
+          question: Can I stop sharing a published persona?
+          answer: |
+            Yes.
+
+            You can take a published persona offline when you no longer want it to be
+            publicly accessible.
+
+        - id: can-i-update-a-published-persona
+          question: Can I update a persona after I have shared it?
+          answer: |
+            Yes.
+
+            You can update a published persona when your information changes.
+
+        - id: can-i-regenerate-a-link
+          question: Can I regenerate my public link?
+          answer: |
+            Yes.
+
+            You can regenerate the public link for a published persona when needed.
+
+    privacy:
+      title: Privacy
+      faqs:
+        - id: is-introverduce-local-first
+          question: What does Local-First mean in IntroVerDuce?
+          answer: |
+            Your everyday workspace starts on your device.
+
+            Personas and profile information are stored locally so that everyday
+            editing remains responsive. Cloud services are used for authentication,
+            synchronisation, backup and public publishing.
+
+        - id: is-my-profile-public
+          question: Is my profile automatically public?
+          answer: |
+            No.
+
+            Your private profile remains separate from the personas you choose to
+            publish.
+
+            You decide which persona to publish and share.
+
+        - id: do-all-personas-get-published
+          question: Are all my personas visible when I publish one?
+          answer: |
+            No.
+
+            Publishing creates a public snapshot of the specific persona you choose.
+            Your other personas remain separate.
+
+        - id: what-happens-when-i-unpublish
+          question: What happens when I unpublish a persona?
+          answer: |
+            The published version is taken offline so that the public link is no
+            longer available.
+
+        - id: can-i-protect-a-link
+          question: Can I protect a shared introduction?
+          answer: |
+            Yes.
+
+            You can protect a publication with a PIN when you want an additional
+            layer of control over access.
+
+    account:
+      title: Account & Access
+      faqs:
+        - id: why-do-i-need-an-account
+          question: Why do I need an account?
+          answer: |
+            Your account provides your cloud identity and allows IntroVerDuce to
+            associate your application with your account for synchronisation, backup
+            and access across devices.
+
+        - id: can-i-use-multiple-devices
+          question: Can I use IntroVerDuce on multiple devices?
+          answer: |
+            Yes.
+
+            IntroVerDuce can be used on phones and desktops. Your account can associate
+            your local application with your cloud identity so that your data can be
+            backed up and synchronised across devices.
+
+  users:
+    personas:
+      title: Personas
+      faqs:
+        - id: create-persona
+          question: How do I create a persona?
+          answer: |
+            Create a new persona and give it its own name, description and content.
+
+            You can then choose the sections you want that persona to contain.
+
+        - id: edit-persona-sections
+          question: Can I add or remove sections from a persona?
+          answer: |
+            Yes.
+
+            You can add, remove and rearrange sections to control exactly what appears
+            in your introduction.
+
+        - id: custom-sections
+          question: Can I create custom sections?
+          answer: |
+            Yes.
+
+            When the standard sections do not fit your needs, you can create custom
+            sections for your persona.
+
+        - id: reorder-persona-sections
+          question: Can I change the order of sections?
+          answer: |
+            Yes.
+
+            Sections can be rearranged so that your introduction is presented in the
+            order you prefer.
+
+    profiles:
+      title: Profiles
+      faqs:
+        - id: profile-vs-persona
+          question: What is the difference between my profile and a persona?
+          answer: |
+            Your core profile contains information about you that can be reused across
+            personas.
+
+            A persona is a specific introduction built around a particular context,
+            role or interest.
+
+        - id: why-separate-profile
+          question: Why is my profile separate from my personas?
+          answer: |
+            Keeping your core profile separate means you do not have to rebuild the
+            same basic information every time you create a new persona.
+
+        - id: persona-specific-information
+          question: Can different personas contain different information?
+          answer: |
+            Yes.
+
+            Each persona can contain the sections and content that make sense for that
+            particular introduction.
+
+    presentation:
+      title: Presentation Mode
+      faqs:
+        - id: what-is-presentation-mode
+          question: What is Presentation Mode?
+          answer: |
+            Presentation Mode is the dedicated view used to present a persona to
+            someone else.
+
+            It arranges the information specifically for the person viewing your
+            introduction.
+
+        - id: presentation-vs-editing
+          question: Is Presentation Mode different from editing my persona?
+          answer: |
+            Yes.
+
+            Editing is where you build and manage your persona. Presentation Mode is
+            designed for showing that persona to another person.
+
+    sharing:
+      title: Sharing & Publishing
+      faqs:
+        - id: publish-persona
+          question: How do I publish a persona?
+          answer: |
+            Choose the persona you want to share and publish it as a separate public
+            snapshot.
+
+            IntroVerDuce then provides a public link that can be shared with others.
+
+        - id: what-is-public-snapshot
+          question: What is a public snapshot?
+          answer: |
+            A public snapshot is a published version of a specific persona that can
+            be viewed through a shared link.
+
+            It is separate from your private workspace.
+
+        - id: qr-code
+          question: How does the QR code work?
+          answer: |
+            IntroVerDuce can generate a QR code for your published introduction.
+
+            Someone can scan the code with their phone camera and open your presentation
+            directly.
+
+        - id: update-published-persona
+          question: What happens when I update a published persona?
+          answer: |
+            You can update the published persona when your information changes, allowing
+            the shared introduction to stay current.
+
+        - id: unpublish-persona
+          question: How do I unpublish a persona?
+          answer: |
+            You can take a published persona offline from your workspace.
+
+            This removes the public availability of that publication.
+
+    links:
+      title: Links & Access Control
+      faqs:
+        - id: temporary-links
+          question: Can I create a temporary introduction link?
+          answer: |
+            Yes.
+
+            IntroVerDuce supports links that expire after one hour.
+
+        - id: pin-protected-links
+          question: Can I protect my introduction with a PIN?
+          answer: |
+            Yes.
+
+            You can protect a publication with a PIN when you want more control over
+            who can access it.
+
+        - id: temporary-link-expiry
+          question: What happens when a temporary link expires?
+          answer: |
+            The temporary link is no longer accessible after its expiry period.
+
+            You can create or share another publication when you need to provide access
+            again.
+
+        - id: regenerate-public-link
+          question: Why would I regenerate a public link?
+          answer: |
+            Regenerating a link allows you to replace an existing public link when you
+            no longer want to use the previous one.
+
+    backupAndSync:
+      title: Backup & Synchronisation
+      faqs:
+        - id: where-is-my-data-stored
+          question: Where is my IntroVerDuce data stored?
+          answer: |
+            Your personas and profile are stored locally on your device for everyday
+            use.
+
+            Cloud services can be used for authentication, backup, synchronisation and
+            public publishing.
+
+        - id: is-my-data-backed-up
+          question: Is my data backed up?
+          answer: |
+            Your account can associate your local application with your cloud identity,
+            allowing your data to be backed up and synchronised across devices.
+
+        - id: does-sync-work-across-devices
+          question: Can my data synchronise across devices?
+          answer: |
+            Yes.
+
+            When your local application is associated with your cloud identity, your
+            data can be synchronised across supported devices.
+
+        - id: what-if-i-change-device
+          question: What happens if I change devices?
+          answer: |
+            Your account can be used to associate a new device with your cloud identity
+            and synchronise your backed-up data.
+
+    pwa:
+      title: Phone & Desktop
+      faqs:
+        - id: what-is-pwa
+          question: What is a progressive web app?
+          answer: |
+            A progressive web app is a web application that can provide an app-like
+            experience on supported phones and desktop devices without requiring a
+            traditional app-store installation.
+
+        - id: where-can-i-use-introverduce
+          question: Where can I use IntroVerDuce?
+          answer: |
+            IntroVerDuce can be used on supported phones and desktop devices through
+            its progressive web app.
+
+        - id: do-i-need-to-install-introverduce
+          question: Do I need to install IntroVerDuce?
+          answer: |
+            No traditional app installation is required.
+
+            IntroVerDuce runs as a progressive web app and can provide an app-like
+            experience without being tied to a single device.
+
+    troubleshooting:
+      title: Troubleshooting
+      faqs:
+        - id: published-link-not-working
+          question: Why isn't my published link working?
+          answer: |
+            Check whether:
+
+            - The persona is still published.
+            - The link has expired.
+            - The publication is protected by a PIN.
+            - You are using the current public link.
+
+        - id: recipient-cannot-view
+          question: Why can't someone view my introduction?
+          answer: |
+            Check that the persona is still published and that the link has not expired.
+
+            If the publication is PIN protected, the recipient will also need the
+            required PIN.
+
+        - id:-data-not-syncing
+          question: Why isn't my data synchronising?
+          answer: |
+            Check:
+
+            - Your device has an internet connection.
+            - You are signed into the correct account.
+            - Your application is associated with your cloud identity.
+
+        - id: missing-persona
+          question: Why can't I find one of my personas?
+          answer: |
+            Check that you are using the correct account and device.
+
+            If you recently changed devices, allow synchronisation to complete before
+            assuming the persona is missing.
+
+        - id: changes-not-appearing
+          question: Why aren't my changes appearing?
+          answer: |
+            Your everyday editing is performed locally.
+
+            Check that your changes have been saved and, if you are working across
+            devices, that synchronisation has completed.
+
+        - id: public-snapshot-outdated
+          question: Why does my published introduction show older information?
+          answer: |
+            A published introduction is a public snapshot of a persona.
+
+            If you have changed the persona, make sure the updated version has been
+            published so that the public version reflects your latest information.
